@@ -109,6 +109,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+src/test-wk-keypair.pem
 
 # Spyder project settings
 .spyderproject
