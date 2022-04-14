@@ -18,7 +18,7 @@ def upload_to_s3(bucket_name: str, group_name: str, data: str) -> typing.Callabl
 
 
 def get_distro_data(instance_ip: str, command: str) -> typing.Optional[typing.Dict]:
-    ssh_key = prk.RSAKey.from_private_key_file('src/wk-keypair.pem')
+    ssh_key = prk.RSAKey.from_private_key_file('creds/wk-keypair.pem')
 
     ssh_client = prk.SSHClient()
     ssh_client.set_missing_host_key_policy(
